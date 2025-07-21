@@ -6,10 +6,6 @@ header {
   background-size: contain;
 }
 
-header h1 strong {
-  font-size: 5rem;
-}
-
 body {
   font-family: Sometype Mono, monospace;
   background-image: url("../img/cork.png");
