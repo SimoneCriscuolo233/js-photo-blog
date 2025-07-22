@@ -9,7 +9,7 @@ for (let i = 0; i < 6; i++) {
               <img src="${card[i].url}" class="card-img-top rounded-0" alt="...">
               <div class="card-body">  
               <p class="card-text">${card[i].date}</p>
-              <p class="card-text">${card[i].title}</p>
+              <p class="card-text"><strong class="fs-4">${card[i].title}</strong></p>
               </div>
             </div>
             <img src="./assets/img/pin.svg" class="position-absolute top-0 start-50 translate-middle " alt="">

@@ -25,7 +25,22 @@
     <div class="container py-5">
       <div class="row gy-4" id="card-container"></div>
     </div>
+    <div id="overlay">
+      <div class="position-absolute top-50 start-50 translate-middle">
+      </div>
+      <div class="position-fixed top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center"
+        style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="d-flex flex-column align-items-center">
+          <button class="btn btn-secondary mb-3" id="close-button">Close</button>
+          <img src="./assets/img/placeholder2.jpg" alt="placeholder" id="img">
+        </div>
+      </div>
+    </div>
   </main>
+
+
+
+
 
 
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
