@@ -25,19 +25,23 @@ for (let i = 0; i < 6; i++) {
 
     cards.forEach(card => {
       card.addEventListener('click', () => {
+        const imgSrc = card.querySelector('img').src;
+        document.getElementById('img').src = imgSrc;
         overlay.classList.remove('d-none')
-
-
       });
       button.addEventListener('click', () => {
         overlay.classList.add('d-none')
       })
-
-
     })
-
   })
-
 }
+
+
+
+
+
+
+
+
 
 
