@@ -12,3 +12,22 @@ body {
   background-repeat: repeat;
   background-size: contain;
 }
+
+.card img {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.position-relative #pin {
+  transition: all 0.1s ease-in-out;
+}
+
+.position-relative:hover #pin {
+  opacity: 0;
+}
+
+.card:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
