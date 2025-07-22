@@ -1,4 +1,8 @@
 const cardContainer = document.getElementById('card-container');
+let overlay = document.getElementById('overlay');
+let button = document.getElementById('close-button')
+
+
 
 for (let i = 0; i < 6; i++) {
   axios.get('https://lanciweb.github.io/demo/api/pictures').then((res) => {
@@ -15,5 +19,25 @@ for (let i = 0; i < 6; i++) {
             <img src="./assets/img/pin.svg" class="position-absolute top-0 start-50 translate-middle " alt="">
           </div>
       </div>`
+
+    const cards = document.querySelectorAll('.card');
+
+
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        overlay.classList.remove('d-none')
+
+
+      });
+      button.addEventListener('click', () => {
+        overlay.classList.add('d-none')
+      })
+
+
+    })
+
   })
+
 }
+
+
